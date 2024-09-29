@@ -1,0 +1,172 @@
+body{
+    margin:0;
+    background-color:#ED1D24;
+    font-family: 'Comic Book', sans-serif;
+    color: white;
+  }
+  
+  
+  /* Typography */
+  
+  .nav-link{
+    color: inherit;
+    font-size: 1rem;
+  }
+
+  h1,h2,p{
+    margin-bottom: 0;
+  }
+
+
+  h1{
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 1.5rem
+  }
+
+  p{
+    font-size: 1rem
+  }
+
+
+
+
+
+
+  
+  /* navbar */
+  
+  header{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 5px black;
+    background-color:inherit
+  }
+  
+  #header-img{
+    width: 35%;
+  }
+
+  #nav-bar{
+    width: 100%;
+  }
+  
+
+  .nav-bar-ul{
+    list-style-type: none; 
+    padding: 0;
+    display:flex;
+    justify-content: space-evenly;
+   
+  }
+
+  
+  
+  @media (min-width: 550px){
+  
+    .nav-link{
+        font-size: 1.5rem;
+      }
+
+
+    header{
+      flex-direction: row;   
+      justify-content:space-around;
+      align-items: flex-start;
+      padding-top:1em;
+     }
+  
+    .nav-bar-ul{
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 0;
+    }
+
+    #nav-bar{
+        width: 60%;
+    }
+  
+   #header-img{
+    width: 5em;
+   }
+
+  }
+
+  @media (min-width: 1100px){
+    #nav-bar{
+        width: 40%;
+      }
+  }
+  
+  /* alignment */
+
+
+    .container{
+        width: 90%;
+        margin: auto;
+        max-width: 1200px;
+    }
+ 
+
+    section{
+        padding-top: 6em;
+    }
+
+    @media ( min-width: 449px) and (max-width: 549px){
+        section{
+            padding-top: 8em;
+        }
+        
+    }
+
+
+/*  home */
+
+img{
+    width: 30px;
+}
+
+/* footer */
+footer{
+    background: black;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.socials-icon img{
+    width: 1.2em;
+    background-color: white;
+    border-radius: 50%
+
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+#email{
+    padding: 1em .5em; 
+    outline: none;
+}
+
+#submit-btn{
+    background: red;
+    border:none;
+    color: inherit;
+}
+
+
+
+
+  
+  
