@@ -13,9 +13,19 @@ body{
     font-size: 1rem;
   }
 
-  h1,h2,p{
+  h1,h2,h3,p{
     margin-bottom: 0;
   }
+
+  h1,h2{
+    text-align: center;
+  }
+
+  .sub-heading{
+    margin-bottom: 2rem;
+  }
+
+
 
 
   h1{
@@ -26,10 +36,16 @@ body{
     font-size: 1.5rem
   }
 
-  p{
-    font-size: 1rem
+  h3{
+    font-size: 1.2rem
   }
 
+  p{
+    font-size: .75rem
+  }
+
+
+  
 
 
 
@@ -65,6 +81,14 @@ body{
     display:flex;
     justify-content: space-evenly;
    
+  }
+
+  .description-text,.socials-text{
+    padding-bottom: .5em;
+  }
+
+  .hero-description{
+        font-size: 1rem;
   }
 
   
@@ -130,9 +154,54 @@ body{
 
 /*  home */
 
-img{
-    width: 30px;
+.main-img,#video{
+    width: 80%;
+    display: block;
+    margin: auto;
 }
+
+#video{
+    width: 90%;
+    height: 15em;
+   
+  }
+
+
+  @media (min-width: 600px){
+    #video{
+        height: 20em;
+    }
+  }
+
+  /* home */
+
+  /* hero */
+
+    .hero-card{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid white;
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+    }
+
+    @media(min-width: 620px){
+
+        .hero-card{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .hero-img,.hero-details{
+            width: 45%;
+            height: 18em;
+
+        }
+
+    }
+
+
+  /* hero */
 
 /* footer */
 footer{
