@@ -26,8 +26,6 @@ body{
   }
 
 
-
-
   h1{
     font-size: 2rem;
   }
@@ -40,11 +38,25 @@ body{
     font-size: 1.2rem
   }
 
-  p{
-    font-size: .75rem
+
+  .description-text,.socials-text{
+    padding-bottom: .5em;
+  }
+
+  .description-text{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero-description{
+        font-size: 1rem;
+       
   }
 
 
+  .comic-title{
+    margin-bottom: 1em;
+  }
   
 
 
@@ -83,13 +95,7 @@ body{
    
   }
 
-  .description-text,.socials-text{
-    padding-bottom: .5em;
-  }
-
-  .hero-description{
-        font-size: 1rem;
-  }
+  
 
   
   
@@ -185,6 +191,10 @@ body{
         padding-bottom: 1em;
     }
 
+    .hero-img{
+        object-fit: contain;
+    }
+
     @media(min-width: 620px){
 
         .hero-card{
@@ -198,10 +208,64 @@ body{
 
         }
 
+        .hero-img{
+            object-fit: cover;
+        }
     }
 
 
   /* hero */
+
+    /* comics */
+
+    #comics{
+        padding-bottom: 2rem;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .comic-card{
+        border: 2px solid goldenrod;
+        border-radius: 1.5% ;
+        background: black;
+        text-align: center;
+        padding: 1em;
+        max-width: 350px;
+        box-sizing: border-box;
+        margin: 2em auto;
+    }
+
+
+    .comic-card > a {
+        border: 1px solid goldenrod;
+        color: goldenrod;
+        padding: .25em .5em
+    }
+
+    .comic-card > img{
+        height: 20em;  
+    }
+
+
+    @media  (min-width: 600px){
+        #comics{
+            flex-direction: row;
+
+        }
+
+        .comic-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+    }
+
+
+
+    /* comics */
+
+
 
 /* footer */
 footer{
